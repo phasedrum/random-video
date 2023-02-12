@@ -11,7 +11,8 @@ const config = {
 			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
 			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
 			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
+			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+			'https://img.ifunny.co/videos/55bb2b9637b70f249bf5cad5bb5bd399da1f13fc1da3fc2acfd16a5b5d7d0f73_1.mp4'
 		]
 		,
 		// Folder path (e.g. 'videos/' or 'folder1/folder2/')

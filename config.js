@@ -29,7 +29,7 @@ const config = {
 
 		// Open video in fullscreen (only works when user clicks play)
 		// Note: Autoplay will be set to false and controls to true if you have this enabled.
-		'Fullscreen': true
+		'Fullscreen': false
 		,
 		// Enable autoplay (will mute the video on playback)
 		'Autoplay': false

@@ -1,41 +1,13 @@
-// - Config -
+// Set config variables
+const items = config['General']['Items'];
+const folder = config['General']['Folder'];
+const redirect = config['General']['Redirect'];
+var fullscreen = config['Video']['Fullscreen'];
+var autoplay = config['Video']['Autoplay'];
+var controls = config['Video']['Controls'];
+var loop = config['Video']['Loop'];
 
-// List of all available videos (e.g. '['video1.mp4', 'video2.ogg', 'video3.mov']')
-// See below if you want to use URLs instead of filenames.
-const items = [
-	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
-	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
-];
-
-// Folder path (e.g. 'videos/' or 'folder1/folder2/')
-// If you want to put urls in the item list, leave this empty ('').
-const folder = '';
-
-// Redirects to video (autoplay with sound & video-controls, but will not loop & fit to viewport)
-// Settings below this one will be ignored if set to true.
-const redirect = false;
-
-// Loops the video (plays it over and over)
-var loop = true;
-
-// Open video in fullscreen (only works when user clicks play)
-// Autoplay will be set to false and controls to true if you have this enabled.
-var fullscreen = true;
-
-// Enable autoplay (will mute the video on playback)
-var autoplay = false;
-
-// Display video-controls (e.g. playhead, volume-slider, etc.)
-var controls = true;
-
-
-
-// - Program -
-
-// Get random file
+// Get random filename
 var file = items[Math.floor(Math.random() * items.length)];
 var path = folder + file;
 

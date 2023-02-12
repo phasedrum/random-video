@@ -2,11 +2,17 @@
 
 // List of all available videos (e.g. '['video1.mp4', 'video2.ogg', 'video3.mov']')
 // See below if you want to use URLs instead of filenames.
-const items = ['1.mp4', '2.mp4', '3.mp4']
+const items = [
+	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+	'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
+]
 
 // Folder path (e.g. 'videos/' or 'folder1/folder2/')
 // If you want to put urls in the item list, leave this empty ('').
-const folder = 'videos/'
+const folder = ''
 
 // Redirects to video (Autoplay with sound & video-controls, but will not loop & fit to viewport)
 // Settings below this one will be ignored if set to true.

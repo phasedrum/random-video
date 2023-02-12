@@ -7,11 +7,11 @@ const config = {
 		// List of all available videos (e.g. '['video1.mp4', 'video2.ogg', 'video3.mov']')
 		// See below if you want to use URLs instead of filenames.
 		'Items': [
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
-			'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+			'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+			'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+			'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+			'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+			'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
 			'https://img.ifunny.co/videos/55bb2b9637b70f249bf5cad5bb5bd399da1f13fc1da3fc2acfd16a5b5d7d0f73_1.mp4'
 		]
 		,

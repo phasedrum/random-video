@@ -56,7 +56,7 @@ if (controls) { attributes += ' controls' }
 if (loop) { attributes += ' loop' }
 
 // Write video
-document.write('<video id="video"' + attributes + '><source src="' + path + '" ' + type + '>Your browser does not support the video tag.</video>');
+document.getElementById("main").innerHTML = '<video id="video"' + attributes + '><source src="' + path + '" ' + type + '>Your browser does not support the video tag.</video>';
 
 // Request fullscreen if set to true
 if (fullscreen) {

@@ -19,7 +19,7 @@ const folder = ''
 const redirect = false
 
 // Enable autoplay (Will mute the video on playback)
-const autoplay = false
+const autoplay = true
 
 // Display video-controls (e.g. playhead, volume-slider, etc.)
 const controls = true
@@ -43,36 +43,36 @@ if (redirect) {
 
 // Set variables
 var extension = file.split('.').pop()
-var attributes = ""
+var attributes = ''
 const types = {
-	"mpeg": "video/mpeg",
-	"mpg": "video/mpeg",
-	"mpe": "video/mpeg",
-	"mp4": "video/mp4",
-	"ogg": "video/ogg",
-	"ogv": "video/ogg",
-	"qt": "video/quicktime",
-	"mov": "video/quicktime",
-	"viv": "video/vnd.vivo",
-	"vivo": "video/vnd.vivo",
-	"webm": "video/webm",
-	"avi": "video/x-msvideo",
-	"movie": "video/x-sgi-movie",
-	"3gp": "video/3gpp"
+	'mpeg': 'video/mpeg',
+	'mpg': 'video/mpeg',
+	'mpe': 'video/mpeg',
+	'mp4': 'video/mp4',
+	'ogg': 'video/ogg',
+	'ogv': 'video/ogg',
+	'qt': 'video/quicktime',
+	'mov': 'video/quicktime',
+	'viv': 'video/vnd.vivo',
+	'vivo': 'video/vnd.vivo',
+	'webm': 'video/webm',
+	'avi': 'video/x-msvideo',
+	'movie': 'video/x-sgi-movie',
+	'3gp': 'video/3gpp'
 }
 
 // Check for type
 var mime = types[extension]
-if (typeof mime !== "undefined") {
+if (typeof mime !== 'undefined') {
 	var type = 'type="' + mime + '"'
 } else {
 	var type = ''
 }
 
 // Apply settings
-if (autoplay) { attributes += " autoplay muted" }
-if (controls) { attributes += " controls" }
-if (loop) { attributes += " loop" }
+if (autoplay) { attributes += ' autoplay muted' }
+if (controls) { attributes += ' controls' }
+if (loop) { attributes += ' loop' }
 
 // Write video
 document.write('<video' + attributes + '><source src="' + path + '" ' + type + '>Your browser does not support the video tag.</video>')
